@@ -1,0 +1,15 @@
+<%= form_tag prediction_path do %>
+  <%= label_tag(:sepal_length_cm, "SepalLengthCm:") %>
+  <%= text_field_tag(:sepal_length_cm) %>
+
+  <%= label_tag(:sepal_width_cm_width, "SepalWidthCmWidth:") %>
+  <%= text_field_tag(:sepal_width_cm_width) %>
+
+  <%= label_tag(:petal_length_cm_length, "PetalLengthCmLength:") %>
+  <%= text_field_tag(:petal_length_cm_length) %>
+
+  <%= label_tag(:petal_width_cm_width, "PetalWidthCmWidth:") %>
+  <%= text_field_tag(:petal_width_cm_width) %>
+
+  <%= submit_tag("Predict") %>
+<% end %>
